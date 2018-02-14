@@ -302,7 +302,7 @@ generatePushID = (function() {
         output = $(this).serializeObject();
         output.event = "wizardStep1Sent";
         output.formId = "Wizard";
-        output.formStep = "1";
+        output.formStep = "2";
 
         measure(output);
 
@@ -322,6 +322,7 @@ generatePushID = (function() {
     eventData = $(this).serializeObject();
     eventData.formId = "Wizard";
     eventData.event = "wizardStep2Sent";
+    eventData.formSter = "3";
 
     measure(eventData);
 
